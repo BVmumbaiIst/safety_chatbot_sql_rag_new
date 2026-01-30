@@ -1,42 +1,45 @@
+# LangChain Core
 langchain-core
 langchain-community
 langchain-openai
 langchain-experimental
 langchain-text-splitters
 langchain-chroma
-faiss-cpu
 langchain-classic
-# OpenAI Integration
-openai
 
-# --- Vector / RAG Support --- hybrid
-faiss-cpu                # Vector database for embeddings
-tiktoken                 # Needed for token counting with OpenAI embeddings
-sentence-transformers     # Optional: for local embedding models (offline mode)
+# OpenAI
+openai
+tiktoken
+
+# Vector / RAG
+faiss-cpu
+sentence-transformers
 
 # LLM + SQL
 sqlalchemy
 pandasql
+duckdb
 
 # Data & ML
 numpy
 pandas
 scikit-learn
 matplotlib
-seaborn
 plotly
 tabulate
 
-# Web & Streamlit
-streamlit
+# Web / UI
+streamlit>=1.31,<1.36
+altair==4.2.2
+streamlit-extras
+
+
+# AWS
 boto3
-duckdb
-beautifulsoup4
-grandalf
 
 # Utilities
 python-dotenv
 language-tool-python
 pydantic
 pydantic[email]
-streamlit-extras
+grandalf
