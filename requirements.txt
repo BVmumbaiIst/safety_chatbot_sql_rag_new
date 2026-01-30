@@ -1,4 +1,13 @@
-# LangChain Core
+# ===============================
+# Streamlit (UI)
+# ===============================
+streamlit>=1.31,<1.36
+streamlit-extras
+altair==4.2.2
+
+# ===============================
+# LangChain (SQL + Optional RAG)
+# ===============================
 langchain-core
 langchain-community
 langchain-openai
@@ -7,24 +16,29 @@ langchain-text-splitters
 langchain-chroma
 langchain-classic
 
-# OpenAI
+# ===============================
+# OpenAI / Tokens
+# ===============================
 openai
 tiktoken
 
-# Vector / RAG
-faiss-cpu
-sentence-transformers
+# ===============================
+# Vector Store (SAFE build)
+# ===============================
+faiss-cpu==1.7.4
 
-# LLM + SQL
+# ===============================
+# Data / SQL
+# ===============================
+pandas
+numpy
 sqlalchemy
 pandasql
 duckdb
 
-# Data & ML
-numpy
-pandas
-scikit-learn
-matplotlib
+# ===============================
+# Visualization
+# ===============================
 plotly
 tabulate
 
@@ -36,8 +50,11 @@ streamlit-extras
 
 # AWS
 boto3
+botocore
 
+# ===============================
 # Utilities
+# ===============================
 python-dotenv
 language-tool-python
 pydantic
