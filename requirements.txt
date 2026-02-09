@@ -25,7 +25,7 @@ tiktoken
 # ===============================
 # Vector Store (SAFE build)
 # ===============================
-faiss-cpu==1.7.4
+faiss-cpu==1.13.2
 
 # ===============================
 # Data / SQL
@@ -44,9 +44,8 @@ tabulate
 
 # Web / UI
 streamlit>=1.31,<1.36
-altair==4.2.2
 streamlit-extras
-
+altair==4.2.2
 
 # AWS
 boto3
